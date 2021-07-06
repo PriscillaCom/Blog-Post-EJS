@@ -5,7 +5,8 @@
 
 <% logPost.forEach(post => {%>
     <h1><%=post.pTitle%></h1>
-    <p><%=post.pBody%></p>
-    <%}) %>
+    <p><%=post.pBody%>
+    <a href="./posts/<%= post.pTitle %>">Read More</a></li>
+    <%}) %></p>
 
 <%- include('./partials/footer'); -%>
