@@ -1,0 +1,11 @@
+<%- include('./partials/header'); -%>
+
+<h1>Home</h1>
+<p> <%= homeContent %> </p>
+
+<% logPost.forEach(post => {%>
+    <h1><%=post.pTitle%></h1>
+    <p><%=post.pBody%></p>
+    <%}) %>
+
+<%- include('./partials/footer'); -%>
